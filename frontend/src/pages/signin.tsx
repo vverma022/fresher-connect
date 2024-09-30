@@ -11,6 +11,7 @@ export default function SignIn() {
   const togglePasswordVisibility = () => setShowPassword(!showPassword)
 
   return (
+    <div className="flex justify-center items-center min-h-screen">
     <Card className="w-full max-w-sm mx-auto">
       <CardHeader>
         <CardTitle className="text-2xl font-bold">Sign In</CardTitle>
@@ -57,5 +58,6 @@ export default function SignIn() {
         <Button className="w-full">Sign In</Button>
       </CardFooter>
     </Card>
+    </div>
   )
 }
