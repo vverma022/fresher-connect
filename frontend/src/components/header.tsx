@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
 import { Menu } from "lucide-react"
-import { FilterSidebar } from "./FilterSidebar"
+import { FilterSidebar } from "./filtersidebar"
 
 export function Header() {
   return (
