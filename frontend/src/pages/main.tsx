@@ -19,10 +19,9 @@ export default function MainPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-100">
+    <div className="bg-gray-100">
       <Header />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex flex-col lg:flex-row gap-8">
-        {/* Sidebar with filters for larger screens */}
         <aside className="w-full lg:w-64 hidden lg:block">
           <div className="bg-white p-6 rounded-lg shadow sticky top-24">
             <h2 className="text-lg font-semibold mb-4">Filters</h2>

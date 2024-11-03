@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { motion } from 'framer-motion'
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
@@ -35,12 +34,7 @@ export function PostCard({ id, user, course, location, content, image }: PostCar
         <CardContent>
           <p className="mb-4">{content}</p>
           <div className="relative w-full h-48 rounded-md overflow-hidden">
-            <Image
-              src={image}
-              alt={`Image posted by ${user}`}
-              fill
-              style={{ objectFit: 'cover' }}
-            />
+            <img src={image} alt={content} className="w-full h-full object-cover" />
           </div>
         </CardContent>
       </Card>
