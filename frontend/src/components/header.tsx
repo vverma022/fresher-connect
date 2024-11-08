@@ -28,7 +28,9 @@ export function Header() {
             </SheetTrigger>
             <SheetContent>
               <h2 className="text-lg font-semibold mb-4">Filters</h2>
-              <FilterSidebar />
+              <FilterSidebar onFilter={function (): void {
+                throw new Error('Function not implemented.')
+              } } />
             </SheetContent>
           </Sheet>
         </div>
